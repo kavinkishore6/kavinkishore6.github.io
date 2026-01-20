@@ -19,8 +19,8 @@
       position: fixed;
       top: 0;
       width: 100%;
-      padding: 15px 40px;
-      background: rgba(15,23,42,0.9);
+      padding: 12px 40px;
+      background: rgba(15,23,42,0.95);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -39,7 +39,7 @@
     }
 
     header {
-      height: 100vh;
+      height: 50vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -54,11 +54,19 @@
 
     header p {
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
+    .contact-card img {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto; /* centers image inside card */
+}
+
     .top-buttons {
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .top-buttons a {
@@ -77,26 +85,22 @@
     }
 
     section {
-      padding: 80px 10%;
+      padding: 50px 10%;
     }
 
     h2 {
       color: #38bdf8;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-size: 2rem;
       text-align: center;
     }
 
     .card {
       background: #020617;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      margin-bottom: 30px;
-    }
-
-    .card h3 {
-      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+      margin-bottom: 18px;
     }
 
     ul {
@@ -104,65 +108,67 @@
     }
 
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       background: #020617;
     }
 
-    /* Skills grid */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
     }
 
-    /* Contact section */
-    .contact-wrapper {
-      text-align: center;
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
 
-    .contact-wrapper p {
-      margin-bottom: 40px;
-      color: #cbd5f5;
+    .project-card {
+      background: #020617;
+      padding: 18px;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .project-card h3 {
+      color: #38bdf8;
+      margin-bottom: 6px;
+    }
+
+    .project-card a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-card ul {
+      list-style-type: disc;
+      margin-left: 20px;
     }
 
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
+      gap: 20px;
     }
 
     .contact-card {
       background: #020617;
-      padding: 35px 20px;
-      border-radius: 18px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 45px rgba(0,0,0,0.35);
-    }
-
-    .contact-card img {
-      width: 44px;
-      margin-bottom: 15px;
-    }
-
-    .contact-card a {
-      color: #e5e7eb;
-      text-decoration: none;
-      font-weight: 500;
+      padding: 25px 15px;
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+      text-align: center;
     }
 
     @media(max-width: 768px) {
       header h1 { font-size: 2.2rem; }
-      section { padding: 60px 5%; }
+      section { padding: 40px 5%; }
     }
   </style>
 </head>
@@ -184,8 +190,7 @@
   <h1>Kavin Kishore Senthil</h1>
   <p>Java Full Stack Developer</p>
   <div class="top-buttons">
-   
-    <a href="https://github.com/kavinkishore6" target="_blank">View GitHub</a>
+    <a href="https://drive.google.com/file/d/1-aS-tZ9Gc8WzhbakrkiHjlcWAnGG7Hvm/view?usp=drive_link" target="_blank">View Resume</a>
   </div>
 </header>
 
@@ -193,15 +198,12 @@
   <h2>About Me</h2>
   <div class="card">
     <ul>
-      <li>Java Full Stack Developer with 2.5+ years of experience in building scalable enterprise applications across the full SDLC.</li>
-      <li>Hands-on experience with Java, Spring Boot, REST APIs, SQL, and full-stack development for manufacturing clients.</li>
-      <li>Worked with global clients including Toyo Tyres and RHI Magnesita, delivering reliable production-grade systems.</li>
-      <li>Strong in backend development, API design, database integration, debugging, and performance optimization.</li>
-      <li>Actively solving DSA problems on LeetCode (150+) and continuously improving problem-solving skills.</li>
+      <li>Aspiring Java Full Stack Developer seeking an opportunity to apply strong problem-solving skills and hands-on project experience in developing scalable and user-centric applications.
+      Strong in backend development, API design, and debugging.
+      Solved 150+ problems on LeetCode.
     </ul>
   </div>
 </section>
-
 
 <section id="skills">
   <h2>Skills</h2>
@@ -219,8 +221,7 @@
     <div class="card">
       <h3>💻 Frontend</h3>
       <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
+        <li>HTML5, CSS3</li>
         <li>JavaScript</li>
         <li>Thymeleaf</li>
       </ul>
@@ -236,20 +237,12 @@
     </div>
 
     <div class="card">
-      <h3>🛠️ Tools & Testing</h3>
+      <h3>🛠️ Tools</h3>
       <ul>
         <li>Git, GitHub</li>
         <li>Eclipse, VS Code</li>
         <li>Postman, Swagger</li>
-        <li>Twilio Integration</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>📋 Methodologies</h3>
-      <ul>
-        <li>Agile</li>
-        <li>Waterfall</li>
+        <li>Twilio</li>
       </ul>
     </div>
 
@@ -259,15 +252,14 @@
 <section id="experience">
   <h2>Work Experience</h2>
   <div class="card">
-    <h3>Rockwell Automation – Associate Software Engineer</h3>
-    <p>Chennai | 2.5 Years</p>
+    <h3>Rockwell Automation – Associate Software Engineer | Chennai | 2.5 Years</h3>
+    
     <ul>
-      <li>Gathered client requirements and created Functional Design Specifications</li>
-      <li>Developed enterprise applications using Java and FTPC framework</li>
-      <li>Implemented PLC tag integration for real-time data exchange</li>
-      <li>Optimized backend and frontend for better system performance</li>
-      <li>Delivered features via Agile sprints with documentation and code reviews</li>
-      <li>Provided production support for live manufacturing applications</li>
+      <li>Developed enterprise Java applications.</li>
+      <li>Integrated PLC tags for real-time systems.</li>
+      <li>Optimized backend and UI performance.</li>
+      <li>Worked in Agile sprints.</li>
+      <li>Handled production support.</li>
     </ul>
   </div>
 </section>
@@ -275,78 +267,104 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Movie Ticket Booking System</h3>
-    <p>Tech Stack: Java, Spring Boot, MySQL, HTML, CSS, JavaScript, Thymeleaf</p>
-    <ul>
-      <li>Role-based authentication for Admin and Users</li>
-      <li>Movie, theatre, show, and seat management modules</li>
-      <li>Booking workflow with transaction history tracking</li>
-      
-      <li>GitHub: <a href="https://github.com/kavinkishore6/Movie-Ticket-Booking-System" target="_blank">Repo Link</a></li>
-    </ul>
-  </div>
+  <div class="project-grid">
 
-  <div class="card">
-    <h3>E-Commerce Application</h3>
-    <p>Tech Stack: Java, Spring Boot, MySQL, Razorpay, HTML, CSS, JavaScript, Thymeleaf</p>
-    <ul>
-      <li>Admin & Customer role-based access control</li>
-      <li>Product catalog, cart, and order tracking modules</li>
-      <li>Razorpay payment gateway integration</li>
-      
-      <li>GitHub: <a href="https://github.com/kavinkishore6/EcommerceApplication" target="_blank">Repo Link</a></li>
-    </ul>
-  </div>
+    <div class="project-card">
+      <h3>Movie Ticket Booking Website</h3>
+      <p>
+        A full-stack movie ticket booking platform that enables users to browse movies, view showtimes, select seats, and book tickets seamlessly.
+      </p>
 
-  <div class="card">
-    <h3>JobConnect Portal — Full Stack Job Portal</h3>
-    <p>Tech Stack: Java, Spring Boot, PostgreSQL, Twilio, Swagger, HTML, CSS, JavaScript, Thymeleaf</p>
-    <ul>
-      <li>Recruiter-candidate platform with job posting and application tracking</li>
-      <li>REST APIs documented using Swagger</li>
-      <li>Twilio SMS notifications improves recruiter response time </li>
-      <li>Secure authentication and role-based access control</li>
-      <li>GitHub: <a href="https://github.com/kavinkishore6/Jobconnect-Portal" target="_blank">Repo Link</a></li>
-    </ul>
-  </div>
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Browse movies with posters</li>
+        <li>Real-time seat selection</li>
+        <li>Secure ticket booking</li>
+        <li>Admin panel for managing movies</li>
+      </ul>
 
+      <h4>Tech Stack:</h4>
+      <p>Java, Spring Boot, REST APIs, PostgreSQL/MySQL, Thymeleaf, HTML, CSS, JavaScript</p>
+
+      <a href="https://github.com/kavinkishore6/Movie-Ticket-Booking-System" target="_blank">View Github Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>E-Commerce Application</h3>
+      <p>
+        A full-stack e-commerce platform that allows customers to browse products, add them to cart, and make payments securely.
+      </p>
+
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Admin & Customer role-based access</li>
+        <li>Product catalog management</li>
+        <li>Cart management , Order tracking</li>
+        <li>Secured Products Ordering without hassle.</li>
+        <li>Razorpay payment integration</li>
+      </ul>
+
+      <h4>Tech Stack:</h4>
+      <p>Java, Spring Boot, MySQL, Razorpay, HTML, CSS, JavaScript, Thymeleaf</p>
+
+      <a href="https://github.com/kavinkishore6/EcommerceApplication" target="_blank">View Github Repository</a>
+    </div>
+
+    <!-- FIXED: JobConnect now inside its own project-card -->
+    <div class="project-card">
+      <h3>JobConnect Portal</h3>
+      <p>
+        A full-stack job portal that allows recruiters to post jobs and manage applicants, while enabling candidates to search and apply seamlessly.
+      </p>
+
+      <h4>Key Features:</h4>
+      <ul>
+        <li>Job posting and application management</li>
+        <li>Recruiter–candidate interaction workflow</li>
+        <li>Real-time SMS notifications</li>
+        <li>Well-documented REST APIs using Swagger</li>
+      </ul>
+
+      <h4>Tech Stack:</h4>
+      <p>Spring Boot,PostgreSQL, HTML, CSS, JavaScript, Thymeleaf</p>
+
+      <a href="https://github.com/kavinkishore6/Jobconnect-Portal" target="_blank">View Github Repository</a>
+    </div>
+
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
 
-  <div class="contact-wrapper">
-    <p>Have an opportunity or idea? Let’s talk</p>
+  <div class="contact-grid">
 
-    <div class="contact-grid">
-
-      <div class="contact-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
-        <p><a href="mailto:kavinred@gmail.com">kavinred@gmail.com</a></p>
-      </div>
-
-      <div class="contact-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-        <p>
-          <a href="https://www.linkedin.com/in/kavin-kishore-b8a1051b9/" target="_blank">
-            LinkedIn
-          </a>
-        </p>
-      </div>
-
-      <div class="contact-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-        <p>
-          <a href="https://github.com/kavinkishore6" target="_blank">
-            GitHub
-          </a>
-        </p>
-      </div>
-
+    <div class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      <p><a href="mailto:kavinred@gmail.com">kavinred@gmail.com</a></p>
     </div>
+
+    <div class="contact-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      <p>
+        <a href="https://www.linkedin.com/in/kavin-kishore-b8a1051b9/" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      <p>
+        <a href="https://github.com/kavinkishore6" target="_blank">
+          GitHub
+        </a>
+      </p>
+    </div>
+
   </div>
 </section>
+
 
 <footer>
   <p>© 2026 Kavin Kishore. All Rights Reserved.</p>
